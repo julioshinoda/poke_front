@@ -30,7 +30,7 @@ const Home = () => {
 
   const getList = async () => {
     try {
-      const res = await fetch({process.env.NEXT_PUBLIC_API_URL}+'/trade', {
+      const res = await fetch(process.env.NEXT_PUBLIC_API_URL+'/trade', {
         method: 'get',
         headers: {
           'Content-Type': 'application/json'
